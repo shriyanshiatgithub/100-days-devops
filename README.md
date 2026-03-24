@@ -13,3 +13,4 @@ Solving one real-world DevOps task every day for 100 days.
 | [Day 01](./day-01/) | Linux | Create non-interactive shell user | ✅ |
 | [Day 02](./day-02/) | Linux | Create temporary user with expiry date | ✅ |
 | [Day 03](./day-03/) | Linux / Security | Disable root SSH login on all servers | ✅ |
+| [Day 04](./day-04/) | Linux / Permissions | Grant executable permissions to all users | ✅ |

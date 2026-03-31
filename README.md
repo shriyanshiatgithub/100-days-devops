@@ -17,3 +17,4 @@ Solving one real-world DevOps task every day for 100 days.
 | [Day 05](./day-05/) | Linux / Security | Install SELinux and permanently disable it | ✅ |
 | [Day 06](./day-06/) | Linux / Automation | Install cronie and configure cron jobs | ✅ |
 | [Day 07](./day-07/) | Linux / SSH | Passwordless SSH from jump host to all servers | ✅ |
+| [Day 08](./day-08/) | Ansible | Install Ansible globally via pip3 on jump host | ✅ |

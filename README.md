@@ -3,8 +3,7 @@
 Solving one real-world DevOps task every day for 100 days.
 
 **Platform:** KodeKloud  
-**Focus:** Linux, Docker, Kubernetes, CI/CD  
-**Start Date:** March 19, 2026  
+**Focus:** Linux, Docker, Kubernetes, CI/CD    
 
 ## Progress Tracker
 

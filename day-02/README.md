@@ -52,8 +52,7 @@ Account expires:                Dec 07, 2026
 ## 🔑 Key Takeaway
 
 Time-bound user accounts are a production security standard.
-Every cloud platform — including Snowflake, AWS IAM, and GCP —
-supports temporary access patterns. Understanding the Linux
+Every cloud platform supports temporary access patterns. Understanding the Linux
 foundation behind it matters.
 
 ---

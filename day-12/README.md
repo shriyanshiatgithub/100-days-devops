@@ -92,13 +92,12 @@ after the REJECT.
 
 ---
 
- 🔑 Key Takeaway
+ ##🔑 Key Takeaway
 
-When a port is "unreachable" there are two completely separate
+**When a port is "unreachable" there are two completely separate
 layers to check: the application layer (is the service running
 and bound to the port?) and the network layer (does the firewall
 allow traffic through?). Always check both before concluding
-anything.
----
+anything.**
 
 *Part of my #100DaysOfDevOps challenge*

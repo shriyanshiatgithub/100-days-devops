@@ -92,7 +92,7 @@ after the REJECT.
 
 ---
 
-# 🔑 Key Takeaway
+ 🔑 Key Takeaway
 
 When a port is "unreachable" there are two completely separate
 layers to check: the application layer (is the service running

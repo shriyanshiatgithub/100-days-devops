@@ -21,3 +21,4 @@ Solving one real-world DevOps task every day for 100 days.
 | [Day 10](./day-10/) | Bash Scripting | Website backup script with passwordless SCP | ✅ |
 | [Day 11](./day-11/) | App Deployment | Deploy WAR file on Tomcat with custom port | ✅ |
 | [Day 12](./day-12/) | Linux / Networking | Fix Apache port conflict and iptables block | ✅ |
+| [Day 13](./day-13/) | Linux / Security | iptables firewall — allow only LBR on port 8088 | ✅ |

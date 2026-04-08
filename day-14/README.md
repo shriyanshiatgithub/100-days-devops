@@ -80,7 +80,7 @@ curl http://localhost:6300
 curl http://stapp01:6300
 ```
 ---
-##🔑 Key Takeaway
+## 🔑 Key Takeaway
 
 Apache service failures are often caused by port conflicts. Always check if the required port is already in use before restarting services. Tools like ss and telnet make debugging faster and more reliable in real-world scenarios.
 

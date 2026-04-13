@@ -1,32 +1,34 @@
 100 Days of DevOps — Day 16
 Task: Configure Nginx Load Balancer with Multiple App Servers
+Field	Value
+Platform	KodeKloud
+Category	Linux / Nginx / Load Balancing
+Difficulty	Medium
+Status	✅ Solved
+Problem Statement
 
-Platform: KodeKloud
-Category: Linux / Nginx / Load Balancing
-Difficulty: Medium
-Status: ✅ Solved
+Due to increasing traffic, the application needed to be moved
+to a high availability setup using a load balancer.
 
-📋 Problem Statement
-
-Due to increasing traffic, the team decided to deploy the
-application on a high availability setup using a load balancer.
-
-My task was to configure Nginx on the LBR server (stlb01)
-to distribute traffic across all backend app servers
+The task was to configure Nginx on the LBR server (stlb01)
+to distribute traffic across multiple backend app servers
 (stapp01, stapp02, stapp03).
 
-Important condition: Apache was already running on port 6400
-on all app servers, and I was not supposed to change it.
+Apache was already running on all backend servers on port 6400,
+and the requirement was to not modify this configuration.
 
-💡 Concepts Learned
+Concepts Learned
 
-Nginx uses the upstream block to define backend servers
-and proxy_pass to forward incoming requests.
+Nginx uses an upstream block inside the http context to define
+multiple backend servers and distribute traffic between them.
 
-By default, Nginx follows round-robin load balancing, so
-traffic automatically gets distributed across servers.
+By default, Nginx uses round-robin load balancing, which means
+requests are sent to each server one by one.
 
-🛠️ Solution
+It is important to match the backend port correctly instead of
+assuming default ports like 80.
+
+Solution
 # Step 1 — Start and enable Nginx on LBR server
 sudo systemctl start nginx
 sudo systemctl enable nginx
@@ -72,34 +74,30 @@ sudo systemctl restart nginx
 
 # Step 7 — Verify
 curl http://stlb01:80
-Expected output:
-Welcome to xFusionCorp Industries!
-⚠️ Gotcha
+Gotcha
 
-Initially, Nginx was running fine but I kept getting the
-default error page:
+Even though Nginx was running, it initially returned the default
+error page:
 
 nginx error! The page you are looking for is temporarily unavailable
 
-This was confusing because:
+This caused confusion because both Nginx and Apache services
+were active.
 
-Nginx service was active
-Apache was also running
+The issue was that Nginx was not correctly pointing to the
+backend servers on the right port. Apache was running on port
+6400, but without configuring that in the upstream block,
+Nginx could not forward the request.
 
-The actual issue was port mismatch.
+There was also a brief delay due to failed SSH login attempts,
+which made debugging slightly confusing.
 
-Nginx was listening on port 80, but backend Apache servers
-were running on port 6400, and the problem statement clearly
-mentioned not to change it.
+Key Takeaway
 
-Once I updated the upstream block to use port 6400,
-it started working.
+Always verify the actual port on which backend services are
+running before configuring a load balancer.
 
-
-🔑 Key Takeaway
-
-Always verify the actual port on which backend services are running.
-
-Load balancer configuration must match backend setup exactly.
+Do not assume default ports. The load balancer configuration
+must align exactly with the backend service setup.
 
 Part of my #100DaysOfDevOps challenge

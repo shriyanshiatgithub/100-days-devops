@@ -25,3 +25,4 @@ Solving one real-world DevOps task every day for 100 days.
 | [Day 14](./day-14/) | Linux / Networking | Apache Service Unavailability (Port Conflict Debugging) | ✅ |
 | [Day 15](./day-15/) | Nginx / SSL | Deploy Nginx with HTTPS and SSL certificate | ✅ |
 | [Day 16](./day-16/) | Nginx / Load Balancing | Configure Nginx LBR with backend on custom port 6400 | ✅ |
+| [Day 17](./day-17/) | PostgreSQL | Create database, user and grant privileges | ✅ |

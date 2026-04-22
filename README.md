@@ -24,5 +24,8 @@ Solving one real-world DevOps task every day for 100 days.
 | [Day 13](./day-13/) | Linux / Security | iptables firewall — allow only LBR on port 8088 | ✅ |
 | [Day 14](./day-14/) | Linux / Networking | Apache Service Unavailability (Port Conflict Debugging) | ✅ |
 | [Day 15](./day-15/) | Nginx / SSL | Deploy Nginx with HTTPS and SSL certificate | ✅ |
+| [Day 16](./day-16/) | Nginx / Load Balancing | Configure Nginx LBR across 3 app servers | ✅ |
+| [Day 17](./day-17/) | PostgreSQL | Create database, user and grant privileges | ✅ |
+| [Day 18](./day-18/) | Apache / Web Hosting | Host two static websites on custom port 8086 | ✅ |
 | [Day 16](./day-16/) | Nginx / Load Balancing | Configure Nginx LBR with backend on custom port 6400 | ✅ |
 | [Day 17](./day-17/) | PostgreSQL | Create database, user and grant privileges | ✅ |
